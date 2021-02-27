@@ -43,10 +43,12 @@ namespace MidTermLabAssignment1
             get { return this.country; }
         }
 
-        public void GetAddress()
+        public string GetAddress()
         {
-            Console.WriteLine("Address =>");
-            Console.WriteLine("\tRoad No. : {0} \n\tHouse No. : {1}\n\tCity : {2}\n\tCountry : {3}",roadNo,houseNo,city,country);
+            // Console.WriteLine("Address =>");
+            // Console.WriteLine("\tRoad No. : {0} \n\tHouse No. : {1}\n\tCity : {2}\n\tCountry : {3}",roadNo,houseNo,city,country);
+            string x = "Address : \n"+roadNo + "," + houseNo + "," + city + "," + country;
+            return x;
         }
     }
 }
