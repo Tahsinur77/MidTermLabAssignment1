@@ -13,6 +13,7 @@ namespace MidTermLabAssignment1
         {
             x++;
             return x;
+            //auto id generator
 
         }
         static void Main(string[] args)
