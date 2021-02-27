@@ -41,8 +41,10 @@ namespace MidTermLabAssignment1
                     break;
                 }
             }
-            if (flag) Console.WriteLine("\n\tAccount Added....\n\tYour Account Number = {0} \n",myBank[num].AccountNumber);
-            else Console.WriteLine("Can not add.....\n");
+            Console.Write("\t\t=====================================================================\n");
+            if (flag) Console.WriteLine("\t\t||\tAccount Added....\n\t\t||\tYour Account Number = {0} ",myBank[num].AccountNumber);
+            else Console.WriteLine("\t\t||Can not add.....");
+            Console.Write("\t\t=====================================================================\n");
         }
         public void DeleteAccount(int accountNumber)
         {
@@ -62,8 +64,8 @@ namespace MidTermLabAssignment1
                     flag = true;
                 }
             }
-            if(flag) Console.WriteLine("Account Deleted....");
-            else Console.WriteLine("Can not delete.....");
+            if(flag) Console.WriteLine("\t\t||\tAccount Deleted....");
+            else Console.WriteLine("\t\t||\tCan not delete.....");
         }
         public void Transaction(int transactionType,params dynamic[] x)
         {
@@ -81,7 +83,7 @@ namespace MidTermLabAssignment1
             }
             else
             {
-                Console.WriteLine("You gave a wrong input....");
+                Console.WriteLine("\t\t||\tYou gave a wrong input....");
             }
         }
         public int SearchAccount(int accountNumber)
@@ -102,7 +104,7 @@ namespace MidTermLabAssignment1
         }
         public void PrintAccountDetails(int index)
         {
-            Console.WriteLine("Bank Name : "+this.bankName);
+            Console.WriteLine("\t\t||\tBank Name : "+this.bankName);
             myBank[index].ShowAccountInformation();
 
         }

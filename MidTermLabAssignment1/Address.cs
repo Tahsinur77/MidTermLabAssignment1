@@ -47,7 +47,7 @@ namespace MidTermLabAssignment1
         {
             // Console.WriteLine("Address =>");
             // Console.WriteLine("\tRoad No. : {0} \n\tHouse No. : {1}\n\tCity : {2}\n\tCountry : {3}",roadNo,houseNo,city,country);
-            string x = "Address : \n"+roadNo + "," + houseNo + "," + city + "," + country;
+            string x = "\t\t||\tAddress : \n\t\t||\t\tRoad no.: "+roadNo + "\n\t\t||\t\tHouse no.: " + houseNo + "\n\t\t||\t\tCity: " + city + "\n\t\t||\t\tCountry: " + country;
             return x;
         }
     }
